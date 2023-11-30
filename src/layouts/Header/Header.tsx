@@ -7,10 +7,13 @@ import styles from "./Header.module.scss";
 const Header: React.FC = () => {
 	return (
 		<header className={styles.header}>
-			<img className={styles.header__logo} src={Logo} alt="logo" />
+			<Link to="/">
+				<img className={styles.header__logo} src={Logo} alt="logo" />
+			</Link>
+
 			<div className={styles.header__signIn}>
 				<i className="fa-solid fa-circle-user"></i>
-				<a href="/login">Login</a>
+				<Link to="/login">Sign In</Link>
 			</div>
 		</header>
 	);

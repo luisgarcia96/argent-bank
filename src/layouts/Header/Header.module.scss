@@ -20,5 +20,13 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		gap: 0.5rem;
+		color: v.$blue-dark;
+		font-weight: v.$fw-bold;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 	}
 }
