@@ -1,14 +1,19 @@
-import Header from './layouts/Header/Header'
-import './styles/main.scss'
+import AppRouter from "./router";
+import { BrowserRouter } from "react-router-dom";
+import Header from "./layouts/Header/Header";
+import "./styles/main.scss";
 
 function App() {
-
-  return (
-    <div id='App'>
-      <Header />
-      <h1>My Vite app</h1> 
-    </div>
-  )
+	return (
+		<div id="App">
+			<BrowserRouter>
+				<Header />
+				<main>
+					<AppRouter />
+				</main>
+			</BrowserRouter>
+		</div>
+	);
 }
 
-export default App
+export default App;

@@ -1,5 +1,24 @@
+@use "../../styles/abstracts" as v;
+
 .header {
-    height: 3rem;
-    width: 100%;
-    background-color: aqua;
+	height: 3rem;
+	width: 100%;
+	background-color: v.$white;
+	padding: 0.3125rem 1.25rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+
+	&__logo {
+		height: 100%;
+		width: 12.5rem;
+		object-fit: cover;
+	}
+
+	&__signIn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
