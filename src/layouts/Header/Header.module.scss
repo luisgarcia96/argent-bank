@@ -24,9 +24,10 @@
 		color: v.$blue-dark;
 		font-weight: v.$fw-bold;
 
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
+		a {
+			height: 100%;
+			text-decoration: none;
+			color: inherit;
+		}
 	}
 }
