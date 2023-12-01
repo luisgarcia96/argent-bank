@@ -1,7 +1,7 @@
 @use "../../styles/abstracts" as v;
 
 .header {
-	height: 3rem;
+	height: 3.4rem;
 	width: 100%;
 	background-color: v.$white;
 	padding: 0.3125rem 1.25rem;
@@ -14,6 +14,10 @@
 		height: 100%;
 		width: 12.5rem;
 		object-fit: cover;
+
+		a {
+			height: 100%;
+		}
 	}
 
 	&__signIn {
