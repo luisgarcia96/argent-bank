@@ -1,11 +1,11 @@
 import FeatureItem from "../../components/FeatureItem/FeatureItem";
 import Hero from "../../components/Hero/Hero";
 
-import styles from "./LandingPage.module.scss";
+import styles from "./Landing.module.scss";
 
-const LandingPage = () => {
+const Landing = () => {
 	return (
-		<div className={styles.landingPage}>
+		<div className={styles.landing}>
 			<Hero />
 			<div className={styles.features}>
 				<FeatureItem
@@ -28,4 +28,4 @@ const LandingPage = () => {
 	);
 };
 
-export default LandingPage;
+export default Landing;

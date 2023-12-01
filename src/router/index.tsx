@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-import LandingPage from "../pages/LandingPage/LandingPage";
+import Landing from "../pages/Landing/LandingPage";
 import NotFound from "../pages/NotFound/NotFound";
 
 const AppRouter = () => {
 	return (
 		<Routes>
-			<Route path="/" element={<LandingPage />} />
+			<Route path="/" element={<Landing />} />
 			<Route path="*" element={<NotFound />} />
 		</Routes>
 	);
