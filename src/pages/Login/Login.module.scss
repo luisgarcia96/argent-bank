@@ -1,0 +1,18 @@
+@use "../../styles/abstracts" as v;
+
+.login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh - 10rem);
+	background-color: v.$purple-dark;
+	padding-top: 3rem;
+
+	&__container {
+		box-sizing: border-box;
+		width: 18.75rem;
+		background-color: v.$white;
+		display: flex;
+		flex-direction: column;
+	}
+}
