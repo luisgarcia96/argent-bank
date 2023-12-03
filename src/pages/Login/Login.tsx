@@ -1,12 +1,14 @@
 import React from "react";
 
+import Button from "../../components/Button/Button";
+
 import styles from "./Login.module.scss";
 
 const Login: React.FC = () => {
 	return (
 		<div className={styles.login}>
 			<div className={styles.login__container}>
-				<img src="" alt="" />
+				<i className="fa-solid fa-circle-user"></i>
 				<h1>Sign in</h1>
 				<div>
 					<div>
@@ -22,7 +24,7 @@ const Login: React.FC = () => {
 					<input type="checkbox" />
 					<p>Remember me</p>
 				</div>
-				<button>Sign in</button>
+				<Button text="Sign In" onClick={() => {}} />
 			</div>
 		</div>
 	);
