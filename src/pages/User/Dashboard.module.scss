@@ -1,0 +1,16 @@
+@use "../../styles/abstracts" as v;
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    background-color: v.$purple-dark;
+
+    &__header {
+        h1 {
+            color: v.$white;
+            font-size: v.$fs-xxl;
+            font-weight: v.$fw-bold;
+            margin: 0;
+        }
+    }
+}
