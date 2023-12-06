@@ -10,21 +10,25 @@ const Login: React.FC = () => {
 			<div className={styles.login__container}>
 				<i className="fa-solid fa-circle-user"></i>
 				<h1>Sign in</h1>
-				<div>
-					<div>
-						<label htmlFor="">Username</label>
-						<input type="text" placeholder="Username" />
-					</div>
+
+				<div className={styles.login__input}>
+					<label htmlFor="">Username</label>
+					<input type="text" placeholder="" />
 				</div>
-				<div>
+
+				<div className={styles.login__input}>
 					<label htmlFor="">Password</label>
-					<input type="password" placeholder="Password" />
+					<input type="password" placeholder="" />
 				</div>
 				<div className={styles.login__rememberMe}>
 					<input type="checkbox" />
 					<p>Remember me</p>
 				</div>
-				<Button text="Sign In" onClick={() => {}} />
+				<Button
+					className={styles.login__button}
+					text="Sign In"
+					onClick={() => {}}
+				/>
 			</div>
 		</div>
 	);
