@@ -9,5 +9,8 @@
     font-weight: v.$fw-bold;
     border: none;
     cursor: pointer;
-    text-decoration: underline;
+
+    &:hover {   
+        text-decoration: underline;
+    }
 }

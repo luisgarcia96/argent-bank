@@ -1,8 +1,9 @@
 import AppRouter from "./router";
 import { BrowserRouter } from "react-router-dom";
 import Header from "./layouts/Header/Header";
-import "./styles/main.scss";
 import Footer from "./layouts/Footer/Footer";
+
+import "./styles/main.scss";
 
 function App() {
 	return (

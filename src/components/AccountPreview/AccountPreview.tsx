@@ -1,18 +1,31 @@
-import React from 'react';
+import React from "react";
+
+import styles from "./AccountPreview.module.scss";
+import Button from "../Button/Button";
 
 interface AccountPreviewProps {
-  accountNumber: string;
-  balance: number;
+	accountTitle: string;
+	balance: number;
+	balanceDescription: string;
 }
 
-const AccountPreview: React.FC<AccountPreviewProps> = ({ accountNumber, balance }) => {
-  return (
-    <div>
-      <h2>Account Preview</h2>
-      <p>Account Number: {accountNumber}</p>
-      <p>Balance: {balance}</p>
-    </div>
-  );
+const AccountPreview: React.FC<AccountPreviewProps> = ({
+	accountTitle,
+	balance,
+	balanceDescription,
+}) => {
+	return (
+		<div className={styles.accountPreview}>
+			<div className={styles.accountPreview__left}>
+				<div className={styles.accountTitle}>{accountTitle}</div>
+				<div className={styles.accountBalance}>${balance}</div>
+				<div className={styles.accountDescription}>{balanceDescription}</div>
+			</div>
+			<div className={styles.accountPreview__right}>
+				<Button text="View transactions" onClick={() => {}} />
+			</div>
+		</div>
+	);
 };
 
 export default AccountPreview;
