@@ -1,16 +1,26 @@
 import React from "react";
 
+import { useDispatch } from "react-redux";
+import { loginUser } from "../../features/authSlice";
+import { AppDispatch } from "../../store/store";
 import Button from "../../components/Button/Button";
 
 import styles from "./Login.module.scss";
-import { useDispatch } from "react-redux";
 
 const Login: React.FC = () => {
-	const [username, setUsername] = React.useState("");
+	const [email, setEmail] = React.useState("");
 	const [password, setPassword] = React.useState("");
 	const [rememberMe, setRememberMe] = React.useState(false);
-	
-	const dispatch = useDispatch();
+
+	const dispatch: AppDispatch = useDispatch();
+
+	const handleLogin = () => {
+		const userCredentials = {
+			email,
+			password,
+		};
+		console.log(dispatch(loginUser(userCredentials)));
+	};
 
 	return (
 		<div className={styles.login}>
@@ -19,12 +29,12 @@ const Login: React.FC = () => {
 				<h1>Sign in</h1>
 
 				<div className={styles.login__input}>
-					<label htmlFor="">Username</label>
+					<label htmlFor="">Email</label>
 					<input
 						type="text"
 						placeholder=""
-						value={username}
-						onChange={(e) => setUsername(e.target.value)}
+						value={email}
+						onChange={(e) => setEmail(e.target.value)}
 					/>
 				</div>
 
@@ -48,7 +58,7 @@ const Login: React.FC = () => {
 				<Button
 					className={styles.login__button}
 					text="Sign In"
-					onClick={() => {}}
+					onClick={handleLogin}
 				/>
 			</div>
 		</div>
